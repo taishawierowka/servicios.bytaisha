@@ -125,6 +125,42 @@
         font-size: 26px;
       }
     }
+
+    .buttons-section {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.glass-button {
+  text-decoration: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1f1f1f;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.9),
+    rgba(230,207,200,0.9)
+  );
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+  backdrop-filter: blur(6px);
+  transition: all 0.25s ease;
+}
+
+.glass-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
   </style>
 </head>
 
@@ -389,6 +425,29 @@
       </div>
       
     </section>
+
+      <!-- BOTONES FINALES -->
+<section class="buttons-section">
+
+  <a href="https://instagram.com/TU_USUARIO"
+     class="glass-button"
+     target="_blank">
+    Instagram
+  </a>
+
+  <a href="https://wa.me/549XXXXXXXXXX"
+     class="glass-button"
+     target="_blank">
+    WhatsApp
+  </a>
+
+  <a href="https://taishanails.vercel.app/tienda/"
+     class="glass-button">
+    Ir a la tienda
+  </a>
+
+</section>
+
 
   </div>
 
